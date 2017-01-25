@@ -12,6 +12,62 @@
     <title>Address Book</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Address Book</h1>
+      </div>
 
+      <div class="section">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 well">
+            <form id="newContactForm">
+              <h2>Add Contact</h2>
+              <div class="form-group">
+                <label for="newFirstName"></label>
+                <input class="form-control" id="newFirstName" type="text" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <label for="newLastName"></label>
+                <input class="form-control" id="newLastName" type="text" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <label for="newAddress"></label>
+                <input class="form-control" id="newAddress" type="text" placeholder="Address" required>
+              </div>
+              <div class="form-group">
+                <label for="newEmail"></label>
+                <input class="form-control" id="newEmail" type="text" placeholder="Email" required>
+              </div>
+                <button class="btn btn-lg btn-success" type="submit">Submit</button>
+                <button class="btn btn-lg btn-primary" type="submit">Add Note</button>
+                <button class="btn btn-lg btn-danger" type="reset" name="button">Reset</button>
+                <div class="form-group">
+                  <label for="newAddNote"></label>
+                  <input class="form-control" id="newAddNote" type="text" placeholder="Add Note">
+                </div>
+            </form>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 well">
+            <h2>Contacts:</h2>
+            <ul id="contactsList">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+
+            <h2 class="panel well" id="headerPanel1">EMPTY COLUMN</h2>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+
+            <h2 class="panel well" id="headerPanel2">EMPTY COLUMN</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
